@@ -7,9 +7,12 @@
     "doc": "docs"
   },
   "scripts": {
-    "deploy": "SET NODE_OPTIONS=--openssl-legacy-provider && bash deploy.sh",
-    "dev": "SET NODE_OPTIONS=--openssl-legacy-provider && vuepress dev docs",
-    "build": "SET NODE_OPTIONS=--openssl-legacy-provider && vuepress build docs"
+    "deploy": "bash deploy.sh",
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs",
+    "dev-baka": "SET NODE_OPTIONS=--openssl-legacy-provider && vuepress dev docs",
+    "build-baka": "SET NODE_OPTIONS=--openssl-legacy-provider && vuepress build docs",
+    "deploy-baka": "SET NODE_OPTIONS=--openssl-legacy-provider && bash deploy.sh"
   },
   "keywords": [],
   "author": "",
