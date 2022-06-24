@@ -7,11 +7,14 @@
     "doc": "docs"
   },
   "scripts": {
-    "deploy": "bash deploy.sh",
-    "dev": "vuepress dev docs",
-    "build": "vuepress build docs"
+    "deploy": "SET NODE_OPTIONS=--openssl-legacy-provider && bash deploy.sh",
+    "dev": "SET NODE_OPTIONS=--openssl-legacy-provider && vuepress dev docs",
+    "build": "SET NODE_OPTIONS=--openssl-legacy-provider && vuepress build docs"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "vuepress": "^1.9.7"
+  }
 }
