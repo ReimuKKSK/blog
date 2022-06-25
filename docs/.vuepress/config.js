@@ -13,11 +13,6 @@ module.exports = {
         {text: '主页', link: '/' },
         {text: '普通的测试', link: '/test/' },
         {text: '虚假的博客', link: '/blog/'},    
-      ],
-      sidebar: [
-        '/',
-        '/page-a',
-        ['/page-b', 'Explicit link text']
       ]
     }
   };

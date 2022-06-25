@@ -9,7 +9,7 @@
   "scripts": {
     "deploy": "bash deploy.sh",
     "dev": "vuepress dev docs",
-    "build": "set port=80 && vuepress build docs",
+    "build": "vuepress build docs",
     "dev-baka": "SET NODE_OPTIONS=--openssl-legacy-provider && vuepress dev docs",
     "build-baka": "SET NODE_OPTIONS=--openssl-legacy-provider && vuepress build docs",
     "deploy-baka": "SET NODE_OPTIONS=--openssl-legacy-provider && bash deploy.sh"
